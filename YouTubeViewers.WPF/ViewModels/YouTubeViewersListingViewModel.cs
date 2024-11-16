@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YouTubeViewers.WPF.Stores;
 
 namespace YouTubeViewers.WPF.ViewModels
 {
@@ -13,7 +14,7 @@ namespace YouTubeViewers.WPF.ViewModels
         public IEnumerable<YouTubeViewersListingItemViewModel>? YouTubeViewersListingItemViewModels => (IEnumerable<YouTubeViewersListingItemViewModel>?)_youTubeViewersListingItemViewModels;
         
 
-        public YouTubeViewersListingViewModel()
+        public YouTubeViewersListingViewModel(SelectedYouTubeViewerStore _selectedYouTubeViewerStore)
         {
             _youTubeViewersListingItemViewModels = new ObservableCollection<YouTubeViewersListingItemViewModel>();
 
