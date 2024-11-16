@@ -24,3 +24,6 @@ C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-wi
 C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\YouTubeViewers.WPF.pdb
 C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\YouTubeViewers.WPF.genruntimeconfig.cache
 C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\ref\YouTubeViewers.WPF.dll
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\YouTubeViewers.WPF.sourcelink.json
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\App.baml

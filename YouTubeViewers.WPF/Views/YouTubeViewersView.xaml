@@ -16,16 +16,16 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Text="YouTube Viewers"/>
-            <Button Grid.Column="1" Content="Add"/>
+            <TextBlock Grid.Column="0" Text="YouTube Viewers" FontSize="32"/>
+            <Button Grid.Column="1" Content="Add" VerticalAlignment="Center" Padding="15,5"/>
         </Grid>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Margin="0,20,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <components:YouTubeViewersListing Grid.Column="0"/>
-            <components:YouTubeViewersDetails Grid.Column="1"/>
+            <components:YouTubeViewersDetails Grid.Column="1" Margin="20,0,0,0"/>
         </Grid>
     </Grid>
 </UserControl>
