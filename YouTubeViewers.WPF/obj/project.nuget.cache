@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kfrpX6D/KXo=",
+  "dgSpecHash": "z4JI92z6P8I=",
   "success": true,
   "projectFilePath": "C:\\Users\\STLX\\source\\repos\\YouTubeViewers\\YouTubeViewers.WPF\\YouTubeViewers.WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\STLX\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

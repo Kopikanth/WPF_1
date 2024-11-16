@@ -3,12 +3,83 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YouTubeViewers.WPF.Components"
+             xmlns:local="clr-namespace:YouTubeViewers.WPF.Components" xmlns:dropdownmenucontrol="clr-namespace:DropdownMenuControl;assembly=DropdownMenuControl"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Border BorderBrush="{StaticResource BorderPrimary}" BorderThickness="1" CornerRadius="5">
-            <ListView BorderThickness="0"/>
+        <Border BorderBrush="{StaticResource BorderPrimary}" BorderThickness="1" CornerRadius="5" SnapsToDevicePixels="True">
+            <Grid>
+                <Grid.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=border}"/>
+                </Grid.OpacityMask>
+                <Border x:Name="border" Background="White" CornerRadius="5"/>
+                <ListView BorderThickness="0" ItemsSource="{Binding YouTubeViewersListingItemViewModels}">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Padding="10" TextBlock.FontSize="16">
+                                <Grid >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="{Binding Username}"/>
+                                    <dropdownmenucontrol:DropdownMenu Grid.Column="1" Margin="10,0,0,0">
+                                        <Border Background="White" BorderBrush="Gray" BorderThickness="1">
+                                            <StackPanel MinWidth="125">
+                                                <StackPanel.Resources>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Background" Value="#f0f0f0"/>
+                                                        <Setter Property="Foreground" Value="Black"/>
+                                                        <Setter Property="Padding" Value="20,10"/>
+                                                        <Setter Property="Cursor" Value="Hand"/>
+
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border Margin="{TemplateBinding Margin}" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+                                                                        <ContentPresenter/>
+                                                                    </Border>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Trigger.EnterActions>
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard>
+                                                                            <ColorAnimation Storyboard.TargetProperty="Background.(SolidColorBrush.Color)" To="#c7c7c7" Duration="0:0:0.1"/>
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </Trigger.EnterActions>
+                                                                <Trigger.ExitActions>
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard>
+                                                                            <ColorAnimation Storyboard.TargetProperty="Background.(SolidColorBrush.Color)" To="#f0f0f0" Duration="0:0:0.0"/>
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </Trigger.ExitActions>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </StackPanel.Resources>
+                                                <Button Content="Edit" Command="{Binding EditCommand}"/>
+                                                <Button Content="Delete" Command="{Binding DeleteCommand}"/>
+                                            </StackPanel>
+                                            
+                                        </Border>
+                                    </dropdownmenucontrol:DropdownMenu>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
         </Border>
     </Grid>
 </UserControl>
