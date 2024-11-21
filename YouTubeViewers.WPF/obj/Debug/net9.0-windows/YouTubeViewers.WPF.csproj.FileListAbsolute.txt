@@ -30,3 +30,9 @@ C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-wi
 C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\bin\Debug\net9.0-windows\DropdownMenuControl.dll
 C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\YouTubeViewers.WPF.csproj.AssemblyReference.cache
 C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\YouTubeV.1B5DBCE9.Up2Date
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\Components\YouTubeViewersDetailsForm.g.cs
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\Views\AddYouTubeViewerView.g.cs
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\Views\EditYouTubeViewerView.g.cs
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\Components\YouTubeViewersDetailsForm.baml
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\Views\AddYouTubeViewerView.baml
+C:\Users\STLX\source\repos\YouTubeViewers\YouTubeViewers.WPF\obj\Debug\net9.0-windows\Views\EditYouTubeViewerView.baml

@@ -8,7 +8,7 @@ namespace YouTubeViewers.WPF.Models
 {
     public class YouTubeViewer
     {
-        public YouTubeViewer(string username, string isSubscribed, bool isMember)
+        public YouTubeViewer(string username, bool isSubscribed, bool isMember)
         {
             Username = username;
             IsSubscribed = isSubscribed;
@@ -16,7 +16,7 @@ namespace YouTubeViewers.WPF.Models
         }
 
         public string Username { get; }
-        public string IsSubscribed { get; }
+        public bool? IsSubscribed { get; }
         public bool IsMember { get; }
 
         
